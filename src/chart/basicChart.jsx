@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { select, scaleLinear, max, scaleBand, axisLeft, axisBottom, format } from 'd3'
+import React, { useEffect, useRef } from 'react';
+import { select, scaleLinear, max, scaleBand, axisLeft, axisBottom } from 'd3'
 import { data } from './data/dataBasicChart'
 
 function BasicChart() {
