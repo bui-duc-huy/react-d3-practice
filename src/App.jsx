@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { select, scaleLinear, max, scaleBand, axisLeft, axisBottom } from 'd3'
+import React from 'react';
 import './App.css';
 import RaceChart from './chart/raceChart'
 import BasicChart from './chart/basicChart'

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { select, scaleLinear, max, scaleBand, axisLeft, axisBottom, format } from 'd3'
-import { data } from './../data/dataBasicChart'
+import { data } from './data/dataBasicChart'
 
 function BasicChart() {
   const svgRef = useRef()
@@ -67,8 +67,6 @@ function BasicChart() {
         marginLeft: 10,
         marginTop: 10
       }}></div>
-      <br></br>
-      {/* <RaceChart></RaceChart> */}
     </div>
   );
 }
