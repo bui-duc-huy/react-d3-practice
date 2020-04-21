@@ -51,6 +51,7 @@ function RaceChart() {
         display: 'flex',
         flexDirection: 'column'
       }}></div>
+      <button onClick={() => setScale(scale + 1)}>change scale</button>
     </div>
   );
 }
