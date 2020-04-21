@@ -5,7 +5,6 @@ import { data } from './data/dataLineChart'
 function LineChart() {
   const svgRef = useRef()
 
-  const scale = 1
   const margin = {
     top: 40,
     bottom: 20,
@@ -62,7 +61,7 @@ function LineChart() {
       // remove canvas
       svgCanvas.remove()
     }
-  }, [scale, data])
+  }, [data])
 
   return (
     <div>
