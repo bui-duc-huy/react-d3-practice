@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import { select, scaleLinear, scaleBand, axisLeft, max, axisBottom, line, extent } from 'd3'
 import { data } from './data/dataLineChart'
 
+const margin = {
+  top: 40,
+  bottom: 20,
+  left: 50,
+  right: 40,
+}
+
+const canvasHeight = 400
+const canvasWidth = 900
+
 function LineChart() {
   const svgRef = useRef()
-
-  const margin = {
-    top: 40,
-    bottom: 20,
-    left: 50,
-    right: 40,
-  }
-
-  const canvasHeight = 400
-  const canvasWidth = 900
 
   function drawBarChar(svgCanvas) {
     const xScale = scaleBand()
